@@ -11,7 +11,6 @@ function PageHead(){
               ghost={true}
               onBack={() => window.history.back()}
               title={<Title level={2}>DailyNews</Title>}
-              subTitle="Stay Updated"
           >
          </PageHeader> 
       </div>

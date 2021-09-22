@@ -43,7 +43,8 @@ function Entertainment( {data}: InferGetServerSidePropsType<typeof getServerSide
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={14} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div>
-                                    <Title level={3} data-aos="zoom-out" data-aos-delay="200" data-aos-once style={{marginTop:"50px"}}>HEADLINES/ENTERTAINMENT</Title>
+                                    <Title level={3} data-aos="zoom-out" data-aos-delay="200" data-aos-once style={{marginTop:"50px"}}>HEADLINES</Title>
+                                    <Title level={5} data-aos="zoom-out" data-aos-delay="200" data-aos-once style={{paddingTop:"10px"}}>ENTERTAINMENT</Title>
                                 </div>
                             </Col>
                             <Col xxl={5} xl={5} lg={3} xs={2} md={3} sm={3} />

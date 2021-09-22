@@ -1,5 +1,5 @@
-import {FunctionComponent} from 'react';
-import {Card,Button,Typography,Avatar} from 'antd';
+import {FunctionComponent, useState} from 'react';
+import {Card,Typography,Avatar} from 'antd';
 
 type CardProps = {
   // the paragraph is optional
@@ -17,6 +17,9 @@ type CardProps = {
  
   }
 
+
+
+
 const {Paragraph,Title} = Typography;
 
 export const Result: FunctionComponent<CardProps>=(props)=>{
@@ -25,8 +28,8 @@ export const Result: FunctionComponent<CardProps>=(props)=>{
         <div>
             <Card
                 hoverable
-
-                style={{ display:"flex",flexDirection:"column",alignItems: "center", maxHeight: "500px", minHeight: "500px", padding: "20px", marginTop: "10px", marginBottom: "10px", marginLeft: "10px", marginRight: "10px", boxShadow: "5px 8px 24px 5px rgba(208, 216, 243, 0.6)" }}
+              
+                style={{ display:"flex",flexDirection:"column",alignItems: "center", maxHeight: "500px", minHeight: "500px", padding: "20px", marginTop: "10px", marginBottom: "10px", marginLeft: "10px", marginRight: "10px", boxShadow:"5px 8px 24px 5px rgba(208, 216, 243, 0.6)"}}
                 cover={<Avatar
                     style={{alignItems:"center",display:"flex",flexDirection:"column"}}
                     src={props.urlToImage}
@@ -66,9 +69,6 @@ export const Result: FunctionComponent<CardProps>=(props)=>{
                 <Title level={5}>Author: {props.author == null ? "NA" : props.author}</Title>
                 <Title level={5}><a href={props.url}>Read More</a></Title>
 
-
-                {/* <Meta title={headline.title} description={headline.description} />
-                                            <h3>Author - {headline.author}</h3>  */}
 
             </Card>
 
