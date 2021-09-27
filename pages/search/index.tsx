@@ -3,6 +3,7 @@ import { Layout,Input,Col,Row ,Typography} from 'antd';
 import { useEffect, useState } from 'react';
 import Nav from '../../Components/Navbar';
 import {Result} from '../../Components/Results';
+import request from '../../utils/request';
 
 const {Header,Content} = Layout;
 const { Search } = Input;
@@ -62,7 +63,8 @@ function Ret(props:{props:[]}){
 function SearchNews(){
     const [data,setData] = useState<[]>([])
     const onSearch = async(value:string) =>{
-        const res = await fetch(`https://newsapi.org/v2/everything?q=${value}&apiKey=${process.env.API_KEY}`);
+        const key = "bdf23da35e554f11881ec710265f4e4a"
+        const res = await fetch(`https://newsapi.org/v2/everything?q=${value}&apiKey=${key}`);
         const data  = await res.json();
         setData(data.articles);
         
