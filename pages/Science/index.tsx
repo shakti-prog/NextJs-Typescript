@@ -53,7 +53,7 @@ function Science( {data}: InferGetServerSidePropsType<typeof getServerSideProps>
                                 source: Object, author: string, title: string, description: string, url: string,
                                 urlToImage: string, publishedAt: string, content: string
                             }, i: number) => (
-                                <React.Fragment>
+                                <React.Fragment key={i}>
                                     <Col xxl={12} xl={8} lg={8} xs={24} md={24} sm={24}>
                                         <Result
                                             source={headline.source}

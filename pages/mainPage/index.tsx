@@ -32,14 +32,14 @@ function mainPage( {data}: InferGetStaticPropsType<typeof getStaticProps>){
             <Header style={{width: '100%' }}>
                 <Nav />
             </Header>
-            <Layout style={{ height: "100vh" }}> 
+            <Layout style={{ height: "100vh"}}> 
                 <div style={{ backgroundColor: "white" }}>
                     <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64, height: "100vh" }}>
-                        <Row>
+                        <Row >
                             <Col xxl={3} xl={5} lg={3} xs={2} md={3} sm={3} />
                             <Col xxl={18} xl={14} lg={18} xs={20} md={18} sm={18} style={{ textAlign: "center" }}>
                                 <div>
-                                    <Title level={3} data-aos="zoom-out" data-aos-delay="200" data-aos-once style={{paddingTop:"50px"}}>HEADLINES</Title>
+                                    <Title level={3} data-aos="zoom-out" data-aos-delay="200" data-aos-once style={{marginTop:"30px"}}>HEADLINES</Title>
                                 </div>
                             </Col>
                             <Col xxl={3} xl={5} lg={3} xs={2} md={3} sm={3} />

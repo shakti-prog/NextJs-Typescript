@@ -2,6 +2,9 @@ import { Menu,Row,} from 'antd';
 import 'antd/dist/antd.css';
 import Link from 'next/link'
 import PageHead from './PageHeader';
+//import { Input } from 'antd';
+
+//const { Search } = Input;
 
 const {SubMenu} = Menu;
 
@@ -10,13 +13,17 @@ const {SubMenu} = Menu;
 
 
 
+
 function Nav(){
+ // const onSearch = (value:string) => console.log(value);
+
+
   return(
       <>
           <Row style={{backgroundColor:"white"}}>
                 <PageHead/>
           </Row>
-          <Row style={{paddingBottom:"80px"}}>
+          <Row style={{paddingBottom:"50px"}}>
                   <Menu theme="light" mode="horizontal" style={{width:"100%"}}>    
                   <Menu.Item key="1" style={{fontSize:"large"}}><Link href="/mainPage">Homepage</Link></Menu.Item>
                   <Menu.Item key="2" style={{fontSize:"large"}}><Link href="/buisness">Buisness</Link></Menu.Item>
@@ -31,10 +38,9 @@ function Nav(){
                       <Menu.Item key="11"><Link href="/Australia">Australia</Link></Menu.Item>
                       <Menu.Item key="12"><Link href="/brazil">Brazil</Link></Menu.Item>
                   </SubMenu>
+                  <Menu.Item key="13" style={{fontSize:"large"}}><Link href="/search">Search news</Link></Menu.Item>
                 </Menu>
-                <hr/> 
           </Row>
-          
      
       </>
   )

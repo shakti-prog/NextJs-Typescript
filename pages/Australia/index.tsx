@@ -32,7 +32,6 @@ function Australia( {data}: InferGetServerSidePropsType<typeof getServerSideProp
     return(  
         <>   
             <Header style={{ width: '100%' }}>
-                <div className="logo" />
                 <Nav />
             </Header>
             <Layout style={{ height: "100vh" }}>
